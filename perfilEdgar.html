@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil con Pasatiempos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .profile-header {
+            background: linear-gradient(to right, #4776E6, #8E54E9);
+            padding: 30px 20px;
+            color: white;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .hobbies-section {
+            padding: 30px;
+        }
+        
+        .section-title {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(to right, #4776E6, #8E54E9);
+            bottom: -5px;
+            left: 25%;
+            border-radius: 3px;
+        }
+        
+        .hobbies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .hobby {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 12px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 100px;
+            transition: all 0.3s ease;
+        }
+        
+        .hobby:hover {
+            background: linear-gradient(to right, #4776E6, #8E54E9);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .hobby i {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .hobby-name {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 480px) {
+            .hobbies-container {
+                gap: 10px;
+            }
+            
+            .hobby {
+                min-width: 80px;
+                padding: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="C:\Users\moderno69\DevOps\DevOps\Quienes_somosDEA\retrato.png" alt="Avatar" class="avatar">
+            <h1 class="name">Edgar Roman</h1>
+            <p class="title">Desarrolladora Frontend</p>
+        </div>
+        
+        <div class="hobbies-section">
+            <h2 class="section-title">Mis Pasatiempos</h2>
+            <div class="hobbies-container">
+                <div class="hobby">
+                    <i class="fas fa-book"></i>
+                    <span class="hobby-name">Leer</span>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-music"></i>
+                    <span class="hobby-name">Música</span>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-camera"></i>
+                    <span class="hobby-name">Fotografía</span>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-utensils"></i>
+                    <span class="hobby-name">Cocinar</span>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="hobby-name">Videojuegos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
