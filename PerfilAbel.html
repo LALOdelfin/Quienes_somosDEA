@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar y Pasatiempos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .profile {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #f0f0f0;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .title {
+            color: #888;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .hobbies {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            padding: 30px;
+            color: white;
+        }
+        
+        .hobbies-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .hobbies-list {
+            list-style: none;
+        }
+        
+        .hobby-item {
+            background-color: rgba(255, 255, 255, 0.15);
+            margin-bottom: 12px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        
+        .hobby-item:hover {
+            transform: translateX(5px);
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        
+        .hobby-icon {
+            margin-right: 12px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="C:\Users\lunaa\OneDrive\Documentos\DevOps\Quienes_somosDEA\1.jpg" alt="Avatar" class="avatar">
+            <h1 class="name">Abel Luna Pérez</h1>
+            <p class="title">Diseñador Fronted</p>
+        </div>
+        
+        <div class="hobbies">
+            <h2 class="hobbies-title">Pasatiempos</h2>
+            <ul class="hobbies-list">
+                <li class="hobby-item">
+                    <span class="hobby-icon">⚽</span>
+                    Jugar Futbol
+                </li>
+                <li class="hobby-item">
+                    <span class="hobby-icon">🎮</span>
+                     Jugar Videojuegos
+                </li>
+                <li class="hobby-item">
+                    <span class="hobby-icon">🎵</span>
+                    Escuchar Musica
+                </li>
+                <li class="hobby-item">
+                    <span class="hobby-icon">💪</span>
+                    hacer Calistenia
+                </li>
+                <li class="hobby-item">
+                    <span class="hobby-icon">✈️</span>
+                    Viajar
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
